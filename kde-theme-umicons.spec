@@ -1,4 +1,4 @@
-#$Revision: 1.3 $, $Date: 2004-04-17 13:54:01 $
+#$Revision: 1.4 $, $Date: 2004-04-19 08:07:39 $
 
 %define		_name	umicons
 
@@ -72,6 +72,7 @@ cd $RPM_BUILD_ROOT%{_iconsdir}/Umicons_2.0
 mv wallpaper/* $RPM_BUILD_ROOT%{_datadir}/wallpapers
 mv kdm/* $RPM_BUILD_ROOT%{_datadir}/apps/kdm/pics/users/
 rm -rf wallpaper kdm
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -84,4 +85,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/wallpapers/*
 
 %files -n kdm-user-pictures-%{_name}
+%defattr(644,root,root,755)
 %{_datadir}/apps/kdm/pics/users/*
