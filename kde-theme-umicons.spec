@@ -1,4 +1,4 @@
-#$Revision: 1.1 $, $Date: 2004-04-17 11:00:10 $
+#$Revision: 1.2 $, $Date: 2004-04-17 11:50:10 $
 
 %define         _name umicons
 
@@ -60,7 +60,7 @@ KDM user picture - %{_name}.
 %description -n kdm-user-pictures-%{_name} -lpl
 Obrazki dla u¿ytkowników w KDM - %{_name}.
 
-
+%prep
 
 %install
 rm -rf $RPM_BUILD_ROOT
