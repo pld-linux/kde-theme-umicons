@@ -1,4 +1,4 @@
-#$Revision: 1.4 $, $Date: 2004-04-19 08:07:39 $
+#$Revision: 1.5 $, $Date: 2004-11-13 15:29:31 $
 
 %define		_name	umicons
 
@@ -9,8 +9,9 @@ Version:	2.0
 Release:	1
 License:	Free for personal use
 Group:		Themes
-Source0:	http://files.deviantart.com/icon/nixicons/Umicons_for_KDE.tar_2.gz
-# Source0-md5:
+#Source0:	http://files.deviantart.com/icon/nixicons/Umicons_for_KDE.tar_2.gz
+Source0:	http://easylinuxguide.com/downloads/kde-iconthemes/Umicons_for_KDE.tar_2.gz
+# Source0-md5:	23e21986ee8402729f5934a3af1e041b
 URL:		http://www.kde-look.org/content/show.php?content=7214
 Requires:	kdelibs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
