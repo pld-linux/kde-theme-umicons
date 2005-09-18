@@ -1,4 +1,4 @@
-#$Revision: 1.5 $, $Date: 2004-11-13 15:29:31 $
+#$Revision: 1.6 $, $Date: 2005-09-18 22:08:51 $
 
 %define		_name	umicons
 
@@ -6,16 +6,17 @@ Summary:	KDE icons - %{_name}
 Summary(pl):	Motyw ikon do KDE - %{_name}
 Name:		kde-theme-%{_name}
 Version:	2.0
-Release:	1
+Release:	2
 License:	Free for personal use
 Group:		Themes
 #Source0:	http://files.deviantart.com/icon/nixicons/Umicons_for_KDE.tar_2.gz
 Source0:	http://easylinuxguide.com/downloads/kde-iconthemes/Umicons_for_KDE.tar_2.gz
 # Source0-md5:	23e21986ee8402729f5934a3af1e041b
 URL:		http://www.kde-look.org/content/show.php?content=7214
-Requires:	kdelibs
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Requires:	kde-icons-%{_name}
+Requires:	kde-wallpaper-%{_name}
 BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 %{_name} is a new concept of icons.
@@ -39,8 +40,7 @@ Requires:	kdelibs
 Summary:	KDE wallpaper - %{_name}
 Summary(pl):	Tapeta do KDE - %{_name}
 Group:		Themes
-# Contains /usr/share/wallpapers
-Requires:	kdelibs
+Requires:	/usr/share/wallpapers
 
 %description -n kde-wallpaper-%{_name}
 A wallpaper to go with KDE %{_name} theme.
@@ -52,8 +52,7 @@ Tapeta pasuj±ca do motywu %{_name}.
 Summary:	KDM user picture - %{_name}
 Summary(pl):	Obrazki dla u¿ytkowników w KDM - %{_name}
 Group:		Themes
-# Contains /usr/share/wallpapers
-Requires:	kdm
+Requires:	/usr/share/wallpapers
 
 %description -n kdm-user-pictures-%{_name}
 KDM user picture - %{_name}.
@@ -76,6 +75,8 @@ rm -rf wallpaper kdm
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%files
 
 %files -n kde-icons-%{_name}
 %defattr(644,root,root,755)
