@@ -1,4 +1,4 @@
-#$Revision: 1.6 $, $Date: 2005-09-18 22:08:51 $
+#$Revision: 1.7 $, $Date: 2007-02-11 22:16:37 $
 
 %define		_name	umicons
 
@@ -57,7 +57,7 @@ Requires:	/usr/share/wallpapers
 %description -n kdm-user-pictures-%{_name}
 KDM user picture - %{_name}.
 
-%description -n kdm-user-pictures-%{_name} -lpl
+%description -n kdm-user-pictures-%{_name} -l pl
 Obrazki dla u¿ytkowników w KDM - %{_name}.
 
 %prep
