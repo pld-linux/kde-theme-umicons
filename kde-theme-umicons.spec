@@ -1,9 +1,9 @@
-#$Revision: 1.7 $, $Date: 2007-02-11 22:16:37 $
+#$Revision: 1.8 $, $Date: 2007-02-12 00:48:58 $
 
 %define		_name	umicons
 
 Summary:	KDE icons - %{_name}
-Summary(pl):	Motyw ikon do KDE - %{_name}
+Summary(pl.UTF-8):   Motyw ikon do KDE - %{_name}
 Name:		kde-theme-%{_name}
 Version:	2.0
 Release:	2
@@ -21,44 +21,44 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 %{_name} is a new concept of icons.
 
-%description -l pl
-%{_name} to nowa koncepcja podej∂cia do ikon.
+%description -l pl.UTF-8
+%{_name} to nowa koncepcja podej≈õcia do ikon.
 
 %package -n kde-icons-%{_name}
 Summary:	KDE icon theme - %{_name}
-Summary(pl):	Motyw ikon do kde - %{_name}
+Summary(pl.UTF-8):   Motyw ikon do kde - %{_name}
 Group:		Themes
 Requires:	kdelibs
 
 %description -n kde-icons-%{_name}
 %{_name} is a new concept of icons.
 
-%description -n kde-icons-%{_name} -l pl
-%{_name} to nowa koncepcja podej∂cia do ikon.
+%description -n kde-icons-%{_name} -l pl.UTF-8
+%{_name} to nowa koncepcja podej≈õcia do ikon.
 
 %package -n kde-wallpaper-%{_name}
 Summary:	KDE wallpaper - %{_name}
-Summary(pl):	Tapeta do KDE - %{_name}
+Summary(pl.UTF-8):   Tapeta do KDE - %{_name}
 Group:		Themes
 Requires:	/usr/share/wallpapers
 
 %description -n kde-wallpaper-%{_name}
 A wallpaper to go with KDE %{_name} theme.
 
-%description -n kde-wallpaper-%{_name} -l pl
-Tapeta pasuj±ca do motywu %{_name}.
+%description -n kde-wallpaper-%{_name} -l pl.UTF-8
+Tapeta pasujƒÖca do motywu %{_name}.
 
 %package -n kdm-user-pictures-%{_name}
 Summary:	KDM user picture - %{_name}
-Summary(pl):	Obrazki dla uøytkownikÛw w KDM - %{_name}
+Summary(pl.UTF-8):   Obrazki dla u≈ºytkownik√≥w w KDM - %{_name}
 Group:		Themes
 Requires:	/usr/share/wallpapers
 
 %description -n kdm-user-pictures-%{_name}
 KDM user picture - %{_name}.
 
-%description -n kdm-user-pictures-%{_name} -l pl
-Obrazki dla uøytkownikÛw w KDM - %{_name}.
+%description -n kdm-user-pictures-%{_name} -l pl.UTF-8
+Obrazki dla u≈ºytkownik√≥w w KDM - %{_name}.
 
 %prep
 
