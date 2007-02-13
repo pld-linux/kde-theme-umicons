@@ -1,9 +1,9 @@
-#$Revision: 1.8 $, $Date: 2007-02-12 00:48:58 $
+#$Revision: 1.9 $, $Date: 2007-02-13 08:06:37 $
 
 %define		_name	umicons
 
 Summary:	KDE icons - %{_name}
-Summary(pl.UTF-8):   Motyw ikon do KDE - %{_name}
+Summary(pl.UTF-8):	Motyw ikon do KDE - %{_name}
 Name:		kde-theme-%{_name}
 Version:	2.0
 Release:	2
@@ -26,7 +26,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %package -n kde-icons-%{_name}
 Summary:	KDE icon theme - %{_name}
-Summary(pl.UTF-8):   Motyw ikon do kde - %{_name}
+Summary(pl.UTF-8):	Motyw ikon do kde - %{_name}
 Group:		Themes
 Requires:	kdelibs
 
@@ -38,7 +38,7 @@ Requires:	kdelibs
 
 %package -n kde-wallpaper-%{_name}
 Summary:	KDE wallpaper - %{_name}
-Summary(pl.UTF-8):   Tapeta do KDE - %{_name}
+Summary(pl.UTF-8):	Tapeta do KDE - %{_name}
 Group:		Themes
 Requires:	/usr/share/wallpapers
 
@@ -50,7 +50,7 @@ Tapeta pasująca do motywu %{_name}.
 
 %package -n kdm-user-pictures-%{_name}
 Summary:	KDM user picture - %{_name}
-Summary(pl.UTF-8):   Obrazki dla użytkowników w KDM - %{_name}
+Summary(pl.UTF-8):	Obrazki dla użytkowników w KDM - %{_name}
 Group:		Themes
 Requires:	/usr/share/wallpapers
 
